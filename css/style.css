@@ -40072,6 +40072,32 @@ a.pswp__share--download:hover {
 	font-weight: 600;
 }
 
+.social-links ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.social-links ul li {
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+.social-links ul li a i {
+	font-size: 25px;
+	transition: 0.3s;
+}
+
+.social-links ul li a i:hover {
+	color: #818181;
+}
+
 /* footer section */
 
 /*# sourceMappingURL=style.css.map */
