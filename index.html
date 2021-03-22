@@ -15,6 +15,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     
     <!-- Stylesheets-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="form.js"></script>
@@ -839,30 +840,13 @@
                 </h2>
                 <hr class="divider hr-sm-left-0 bg-white" />
                 <div class="offset-top-60">
+                 
                   <form
                   id="reused_form"
-                    class="rd-mailform text-left"
-                    data-form-output="form-output-global"
-                    data-form-type="contact"
+                    class="text-left"
                     method="post"
                     enctype=&quot;multipart/form-data&quot;
                   >
-                    <div class="offset-top-17">
-                      <div class="form-group">
-                        <label
-                          class="form-label form-label-outside text-white"
-                          for="fill-form-name"
-                          >Prénom</label
-                        >
-                        <input
-                          class="form-control"
-                          id="fill-form-name"
-                          type="text"
-                          name="name"
-                          data-constraints="@Required"
-                        />
-                      </div>
-                    </div>
                     <div class="offset-top-17">
                       <div class="form-group">
                         <label
@@ -874,7 +858,7 @@
                           class="form-control"
                           id="fill-form-last-name"
                           type="text"
-                          name="last-name"
+                          name="Name"
                           data-constraints="@Required"
                         />
                       </div>
@@ -906,7 +890,7 @@
                           class="form-control"
                           id="fill-form-email"
                           type="email"
-                          name="email"
+                          name="Email"
                           data-constraints="@Required @Email"
                         />
                       </div>
@@ -919,6 +903,7 @@
                           >Message</label
                         >
                         <textarea class="form-control" id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+                        
                       </div>
                     </div>
                     <!--<div class="offset-top-17">
@@ -935,7 +920,7 @@
                       <div class="form-group">
                         <!-- RD Filepicker-->
                         <div class="rd-file-picker" id="fill-form-file">
-                          <input name="file" type="file" multiple />
+                          <input id="image" name="image" type="file" multiple />
                           <div class="rd-file-picker-meta"></div>
                           <div class="rd-file-picker-btn btn text-left">
                             <span>Pièce jointe</span>
