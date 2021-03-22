@@ -39968,6 +39968,10 @@ a.pswp__share--download:hover {
 	font-family: 'brinnan' !important;
 }
 
+.custom-font-2 {
+	font-family: 'Poppins', sans-serif !important;
+}
+
 .highlight-container, .highlight {
 	position: relative;
 }
@@ -40012,8 +40016,16 @@ a.pswp__share--download:hover {
 	padding-top: 20px;
 }
 
+.pb-3 {
+	padding-bottom: 20px;
+}
+
 .pt-5 {
 	padding-top: 50px;
+}
+
+.pb-5 {
+	padding-bottom: 50px;
 }
 
 /* footer section */
@@ -40042,6 +40054,22 @@ a.pswp__share--download:hover {
 
 .custom-img-2 {
 	width: 60%;
+}
+
+.text-container {
+	font-family: 'Poppins', sans-serif !important;
+	text-align: left;
+	font-size: 14px;
+}
+
+.text-container h2 {
+	text-align: center;
+}
+
+.text-container h3, .text-container h4, .text-container h5 {
+	font-family: 'Poppins', sans-serif !important;
+	font-size: 20px;
+	font-weight: 600;
 }
 
 /* footer section */
