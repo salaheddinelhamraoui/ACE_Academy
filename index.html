@@ -13,9 +13,11 @@
     <meta name="keywords" content="intense web design multipurpose template" />
     <meta name="date" content="Dec 26" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    
     <!-- Stylesheets-->
 
     <link rel="stylesheet" href="css/style.css" />
+    <script src="form.js"></script>
     <!--[if lt IE 10]>
       <div
         style="
@@ -838,11 +840,12 @@
                 <hr class="divider hr-sm-left-0 bg-white" />
                 <div class="offset-top-60">
                   <form
+                  id="reused_form"
                     class="rd-mailform text-left"
                     data-form-output="form-output-global"
                     data-form-type="contact"
                     method="post"
-                    action="bat/rd-mailform.php"
+                    enctype=&quot;multipart/form-data&quot;
                   >
                     <div class="offset-top-17">
                       <div class="form-group">
@@ -908,6 +911,16 @@
                         />
                       </div>
                     </div>
+                    <div class="offset-top-17">
+                      <div class="form-group">
+                        <label
+                          class="form-label form-label-outside text-white"
+                          for="message"
+                          >Message</label
+                        >
+                        <textarea class="form-control" id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+                      </div>
+                    </div>
                     <!--<div class="offset-top-17">
                       <div class="form-group">
                         <label class="form-label form-label-outside" for="fill-form-department" style="color: #fff;">School</label>
@@ -938,6 +951,12 @@
                       </button>
                     </div>
                   </form>
+                  <div id="success_message" style="display:none">
+                    <h3>Submitted the form successfully!</h3> 
+                    <p> We will get back to you soon. </p>
+                </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+
                 </div>
               </div>
             </div>
